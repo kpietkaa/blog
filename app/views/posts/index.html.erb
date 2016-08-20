@@ -1,1 +1,6 @@
-<h1>Pozdro</h1>
+<%= @posts.each do |post| %>
+  <div class="post_wrapper">
+    <h2 class="title"><%= link_to post.title, post %></h2>
+    <p class="body"><%= post.created_at.strftime("%d, %B, %Y") %>
+    </div>
+<% end %>
