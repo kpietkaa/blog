@@ -9,47 +9,47 @@
 </head>
 <body>
 
-<div id="sidebar">
-  <div id="logo">
-    <%= link_to root_path do %>
+  <div id="sidebar">
+    <div id="logo">
+      <%= link_to root_path do %>
       <%= image_tag "logo.svg" %>
-    <% end %>
-  </div>
-
-  <ul>
-    <li class="category">Website</li>
-    <li><%= link_to "Blog", root_path %></li>
-    <li>About</li>
-  </ul>
-
-  <ul>
-    <li class="category">Social</li>
-    <li><a href="www.facebook.com">Facebook</a></li>
-    <li><a href="www.instagream.com">Instagram</a></li>
-    <li><a href="www.github.com/kpietkaa">Github</a></li>
-    <li><a href="mailto:kpietkaa@gmail.com">Email</a></li>
-  </ul>
-
-  <p class="sign_in">Admin</p>
-</div>
-
-<div id="main_content">
-  <div id="header">
-    <p>All Posts</p>
-
-    <div class="buttons">
-      <button class="button"><%= link_to "New Post", new_post_path %></button>
-      <button class="button">Log Out</button>
+      <% end %>
     </div>
+
+    <ul>
+      <li class="category">Website</li>
+      <li><%= link_to "Blog", root_path %></li>
+      <li>About</li>
+    </ul>
+
+    <ul>
+      <li class="category">Social</li>
+      <li><a href="www.facebook.com">Facebook</a></li>
+      <li><a href="www.instagream.com">Instagram</a></li>
+      <li><a href="www.github.com/kpietkaa">Github</a></li>
+      <li><a href="mailto:kpietkaa@gmail.com">Email</a></li>
+    </ul>
+
+    <p class="sign_in">Admin</p>
   </div>
 
-  <% flash.each do |name, msg| %>
+  <div id="main_content">
+    <div id="header">
+      <p>All Posts</p>
+
+      <div class="buttons">
+        <button class="button"><%= link_to "New Post", new_post_path %></button>
+        <button class="button">Log Out</button>
+      </div>
+    </div>
+
+    <% flash.each do |name, msg| %>
     <%= content_tag(:div, msg, class: "alert") %>
-  <% end %>
+    <% end %>
 
-  <%= yield %>
+    <%= yield %>
 
-</div>
+  </div>
 
 
 
