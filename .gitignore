@@ -15,5 +15,5 @@
 /log/*
 !/log/.keep
 /tmp
-.DS_Store
 /db/seeds.rb
+.DS_Store
