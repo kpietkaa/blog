@@ -1,4 +1,10 @@
-<%= form_for([@post, @post.comments.build]) do |f| %>
+<%= form_for [@post, Comment.new] do |f| %>
+<% if @comment && @comment.errors.any? %>
+  <% @comment.errors.full_messages.each do |msg| %>
+   <li><%= msg %></li>
+  <% end %>
+<% end %>
+
     <p>
       <%= f.label :name %><br>
       <%= f.text_field :name %>

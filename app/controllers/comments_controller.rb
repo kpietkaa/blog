@@ -1,10 +1,14 @@
 class CommentsController < ApplicationController
+  extend ActiveModel::Naming
 
   def create
     @post = Post.find(params[:post_id])
     @comment = @post.comments.create(params[:comment].permit(:name, :body))
-
-    redirect_to post_path(@post)
+    if @comment.errors.any?
+      render "posts/show"
+    else
+      redirect_to @post
+    end
   end
 
   def destroy
