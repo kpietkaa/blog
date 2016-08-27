@@ -22,6 +22,14 @@
     <%= render @post.comments %>
 
     <h3>Add a comment:</h3>
-    <%= render 'comments/form' %>
+    <div id="form">
+      <%= render 'comments/form' %>
+  </div>
   </div>
 </div>
+
+<% if url_for(:back) + "/comments" == "http://localhost:3000" + url_for %>
+  <script type"text/javascript">
+    document.location.hash="#form"
+  </script>
+<% end %>
