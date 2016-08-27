@@ -3,7 +3,9 @@
 <head>
   <title>Blog</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+<%#
   <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Raleway:400,700' %>
+%>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -24,13 +26,13 @@
 
     <ul>
       <li class="category">Social</li>
-      <li><a href="https://facebook.com/kpietkaa">Facebook</a></li>
-      <li><a href="https://instagram.com/kpietkaa">Instagram</a></li>
-      <li><a href="https://github.com/kpietkaa">Github</a></li>
+      <li><a href="www.facebook.com">Facebook</a></li>
+      <li><a href="www.instagream.com">Instagram</a></li>
+      <li><a href="www.github.com/kpietkaa">Github</a></li>
       <li><a href="mailto:kpietkaa@gmail.com">Email</a></li>
     </ul>
     <% if !user_signed_in? %>
-      <p class="sign_in"><%= link_to "Admin", user_session_path %></p>
+      <p class="sign_in">Admin</p>
     <% end %>
   </div>
 
