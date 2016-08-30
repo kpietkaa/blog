@@ -1,0 +1,12 @@
+pl:
+  all_posts: Wszystkie posty
+  website: Strona
+  social: Media Społecznościowe
+  back_to_all_posts_html: "%{href}"
+  back_to_all_posts: Wróć do wszystkich postów
+  about_html: "%{href}"
+  about: O Nas
+  new_post_html: "%{href}"
+  new_post: "Nowy post"
+  log_out_html: "%{href}"
+  log_out: Wyloguj
