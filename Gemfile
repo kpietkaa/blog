@@ -25,6 +25,7 @@ gem 'pg'
 gem 'devise'
 gem 'puma'
 gem 'pry'
+gem 'i18n'
 
 
 

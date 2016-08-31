@@ -1,0 +1,43 @@
+pl:
+  helpers:
+    submit:
+      comment:
+        create: "Utwórz komentarz"
+    label:
+      comment:
+        name: Pseudonim
+        body: Komentarz
+  activerecord:
+    errors:
+      models:
+        comment:
+          attributes:
+            name:
+              blank: Pseudonim nie może być pusty
+              too_short: Pseudonim jest za krótki (przynajmniej %{count} znaki)
+            body:
+              blank: Komentarz nie może być pusty
+  all_posts: Wszystkie posty
+  website: Strona
+  social: Media Społecznościowe
+  comments_html:
+    zero: "%{count} Komantarzy"
+    one: "%{count} Komentarz"
+    few: "%{count} Komentarze"
+    other: "%{count} Komentarzy"
+  about_html: "%{href}"
+  about: O Nas
+  new_post_html: "%{href}"
+  new_post: "Nowy post"
+  log_out_html: "%{href}"
+  log_out: Wyloguj
+  back_to_all_posts_html: "%{href}"
+  back_to_all_posts: Wróć do wszystkich postów
+  edit_html: "%{href}"
+  edit: Edytuj
+  delete_html: "%{href}"
+  delete: Usuń
+  submitted: 'Dodano '
+  ago: ' temu'
+  add_a_comment: 'Dodaj komentarz:'
+  posts_new: Komentarz

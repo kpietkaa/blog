@@ -1,7 +1,7 @@
 <%= form_for [@post, Comment.new] do |f| %>
 <% if @comment && @comment.errors.any? %>
-  <% @comment.errors.full_messages.each do |msg| %>
-   <li><%= msg %></li>
+  <% @comment.errors.each do |attribute, error| %>
+   <li><%= error %></li>
   <% end %>
 <% end %>
 

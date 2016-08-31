@@ -19,13 +19,13 @@
     </div>
 
     <ul>
-      <li class="category">Website</li>
+      <li class="category"><%=t :website %></li>
       <li><%= link_to "Blog", root_path %></li>
-      <li><%= link_to "About", about_path %></li>
+      <li><%= t("about_html", href: link_to(t("about"), about_path)) %></li>
     </ul>
 
     <ul>
-      <li class="category">Social</li>
+      <li class="category"><%=t :social %></li>
       <li><a href="https://facebook.com/kpietkaa">Facebook</a></li>
       <li><a href="https://instagram.com/kpietkaa">Instagram</a></li>
       <li><a href="https://github.com/kpietkaa">Github</a></li>
@@ -39,16 +39,18 @@
   <div id="main_content">
     <div id="header">
       <% if current_page?(root_path) %>
-        <p>All Posts</p>
+        <p><%=t :all_posts %></p>
       <% elsif current_page?(about_path) %>
-        <p>About<p>
+        <p><%=t :about %><p>
       <% else %>
-        <%= link_to "Back to All Posts", root_path %>
+        <p><%= t("back_to_all_posts_html", href: link_to(t("back_to_all_posts"), root_path)) %></p>
       <% end %>
       <% if user_signed_in? %>
         <div class="buttons">
-          <button class="button"><%= link_to "New Post", new_post_path %></button>
-          <button class="button"><%= link_to "Log Out", destroy_user_session_path, method: :delete %></button>
+          <button class="button"><%= t("new_post_html", href: link_to(t("new_post"),
+            new_post_path)) %></button>
+          <button class="button"><%= t("log_out_html", href: link_to(t("log_out"),
+            destroy_user_session_path, method: :delete)) %></button>
         </div>
       <% end %>
 
