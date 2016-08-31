@@ -21,7 +21,7 @@
     <h2><%= t("comments_html", count: @post.comments.count) %></h2>
     <%= render @post.comments %>
 
-    <h3>Add a comment:</h3>
+    <h3><%=t :add_a_comment %></h3>
     <div id="form">
       <%= render 'comments/form' %>
   </div>

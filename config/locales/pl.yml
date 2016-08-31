@@ -1,4 +1,22 @@
 pl:
+  helpers:
+    submit:
+      comment:
+        create: "Utwórz komentarz"
+    label:
+      comment:
+        name: Pseudonim
+        body: Komentarz
+  activerecord:
+    errors:
+      models:
+        comment:
+          attributes:
+            name:
+              blank: Pseudonim nie może być pusty
+              too_short: Pseudonim jest za krótki (przynajmniej %{count} znaki)
+            body:
+              blank: Komentarz nie może być pusty
   all_posts: Wszystkie posty
   website: Strona
   social: Media Społecznościowe
@@ -21,3 +39,5 @@ pl:
   delete: Usuń
   submitted: 'Dodano '
   ago: ' temu'
+  add_a_comment: 'Dodaj komentarz:'
+  posts_new: Komentarz
