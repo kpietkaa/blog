@@ -1,7 +1,6 @@
 <% @posts.each do |post| %>
   <div class="post_wrapper">
     <h2 class="title"><%= link_to post.title, post %></h2>
-    <%# binding.pry %>
     <p class="body"><%= l(post.created_at, format: :long) %> |
       <%= t("comments_html", count: post.comments.count) %></p>
     <p class="body"><%= link_to post.body, post %></p>

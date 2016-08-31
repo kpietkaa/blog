@@ -15,3 +15,9 @@ pl:
   log_out: Wyloguj
   back_to_all_posts_html: "%{href}"
   back_to_all_posts: Wróć do wszystkich postów
+  edit_html: "%{href}"
+  edit: Edytuj
+  delete_html: "%{href}"
+  delete: Usuń
+  submitted: 'Dodano '
+  ago: ' temu'
