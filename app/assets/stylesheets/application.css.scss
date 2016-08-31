@@ -29,7 +29,7 @@ a {
 }
 
 #sidebar {
-	width: 250px;
+	width: 190px;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -40,13 +40,13 @@ a {
 	#logo img{
     height: 40px;
 		position: absolute;
-		right: 3em;
+		right: 2em;
 		top: 3em;
 	}
 	ul {
 		list-style: none;
 		text-align: right;
-		padding-right: 3em;
+		padding-right: 2em;
 		.category {
 			font-weight: 700;
 			font-size: 0.7em;
@@ -103,7 +103,7 @@ a {
 }
 
 #main_content {
-	margin-left: 250px;
+	margin-left: 190px;
 	#header {
 		padding: 1em 3em;
 		border-bottom: 1px solid #d6dce0;
@@ -126,7 +126,7 @@ a {
 		}
 	}
 	.post_wrapper {
-		padding: 3em;
+		padding: 1.5em 2em;
 		border-bottom: 1px solid #d6dce0;
 		.title {
 			margin: 0;
@@ -150,7 +150,7 @@ a {
 		}
 	}
 	#post_content {
-		padding: 1em 3em;
+		padding: 0em 3em 2em 3em;
 		.title {
 			font-weight: 500;
 			text-decoration: none;
