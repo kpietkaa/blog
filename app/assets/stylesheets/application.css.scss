@@ -29,7 +29,7 @@ a {
 }
 
 #sidebar {
-	width: 190px;
+	width: 215px;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -46,7 +46,7 @@ a {
 	ul {
 		list-style: none;
 		text-align: right;
-		padding-right: 2em;
+		padding-right: 1em;
 		.category {
 			font-weight: 700;
 			font-size: 0.7em;
@@ -103,7 +103,7 @@ a {
 }
 
 #main_content {
-	margin-left: 190px;
+	margin-left: 215px;
 	#header {
 		padding: 1em 3em;
 		border-bottom: 1px solid #d6dce0;

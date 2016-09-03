@@ -41,3 +41,5 @@ pl:
   ago: ' temu'
   add_a_comment: 'Dodaj komentarz:'
   posts_new: Komentarz
+  photos_html: "%{href}"
+  photos: Zdjęcia

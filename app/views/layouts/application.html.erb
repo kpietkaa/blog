@@ -22,14 +22,21 @@
       <li class="category"><%=t :website %></li>
       <li><%= link_to "Blog", root_path %></li>
       <li><%= t("about_html", href: link_to(t("about"), about_path)) %></li>
+      <li><%= t("photos_html", href: link_to(t("photos"), "https://www.dropbox.com/sh/cy7ffquyfcb04mv/AAB9XZskCGTYzGwihZtHNfWla?dl=0")) %></li>
     </ul>
 
     <ul>
-      <li class="category"><%=t :social %></li>
-      <li><a href="https://facebook.com/kpietkaa">Facebook</a></li>
+      <li class="category"><%=t :social %><br> Kazik</li>
       <li><a href="https://instagram.com/kpietkaa">Instagram</a></li>
-      <li><a href="https://github.com/kpietkaa">Github</a></li>
+      <li><a href="https://facebook.com/kpietkaa">Facebook</a></li>
+      <li><a href="https://github.com/kpietkaa/blog">Github</a></li>
       <li><a href="mailto:kpietkaa@gmail.com">Email</a></li>
+      <li class="category"><%=t :social %> Maciek</li>
+      <li><a href="https://instagram.com/maciekrafalowski">Instagram</a></li>
+      <li><a href="https://facebook.com/maciek.rafalowski">Facebook</a></li>
+      <li class="category"><%=t :social %> Bartek</li>
+      <li><a href="https://instagram.com/bartosz_pacholski">Instagram</a></li>
+      <li><a href="https://facebook.com/bartek.pacholski">Facebook</a></li>
     </ul>
     <% if !user_signed_in? %>
       <p class="sign_in"><%= link_to "Admin", user_session_path %></p>
