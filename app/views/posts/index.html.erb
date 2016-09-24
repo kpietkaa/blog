@@ -3,6 +3,6 @@
     <h2 class="title"><%= link_to post.title, post %></h2>
     <p class="body"><%= l(post.created_at, format: :long) %> |
       <%= t("comments_html", count: post.comments.count) %></p>
-    <p class="body"><%= link_to post.body, post %></p>
+    <p class="body"><%= truncate(post.body, length: 800) %></p>
     </div>
 <% end %>
