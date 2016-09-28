@@ -26,9 +26,7 @@ gem 'devise'
 gem 'puma'
 gem 'pry'
 gem 'i18n'
-
-
-
+gem 'simple_form', '~> 3.3', '>= 3.3.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
