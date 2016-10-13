@@ -181,11 +181,16 @@ a {
 				.clear_both {
 					clear: both;
 				}
+				p {
+					padding-right: 1em;
+				}
 				&:after {
 					clear: both;
 				}
 				.comment_content {
-					float: left;
+					margin: 1em 0 0 0;
+
+					position: relative;
 					.comment_name {
 						margin: 1em 0 0 0;
 						font-size: 0.7em;
@@ -194,6 +199,7 @@ a {
 					.comment_body {
 						font-size: 1.2em;
 						margin: 0.1em 0 0 0;
+						padding-right: 6em;
 					}
 					.comment_time {
 						margin-top: 1.2em;

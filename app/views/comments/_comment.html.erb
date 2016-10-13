@@ -1,6 +1,10 @@
 <div class="comment clearfix">
   <div class="comment_content">
     <% unless comment.name.blank? || comment.body.blank? %>
+    <% if user_signed_in? %>
+      <p><%= t("delete_html", href: link_to(t("delete"), [comment.post, comment],
+        method: :delete, class: "button")) %></p>
+    <% end %>
       <p class="comment_name"><strong><%= comment.name %></strong></p>
       <p class="comment_body"><%= comment.body %></p>
       <% if !comment.created_at.nil? %>
@@ -8,9 +12,5 @@
           <%=t :ago %></p>
       <% end %>
   </div>
-      <% if user_signed_in? %>
-        <p><%= t("delete_html", href: link_to(t("delete"), [comment.post, comment],
-          method: :delete, class: "button")) %></p>
-      <% end %>
     <% end %>
 </div>
