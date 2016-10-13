@@ -3,10 +3,6 @@ pl:
     submit:
       comment:
         create: "Utwórz komentarz"
-    label:
-      comment:
-        name: Pseudonim
-        body: Komentarz
   activerecord:
     errors:
       models:
@@ -43,3 +39,8 @@ pl:
   posts_new: Komentarz
   photos_html: "%{href}"
   photos: Zdjęcia
+  simple_form:
+      labels:
+        comment:
+          name: Pseudonim
+          body: Komentarz
