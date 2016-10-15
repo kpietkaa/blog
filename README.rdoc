@@ -1,6 +1,6 @@
 == README
 
 * Ruby: 2.3.0
-* Rails: 4.2.6
+* Rails: 5.0.0.1
 * Heroku link: https://gruzja1.herokuapp.com/
-* Deploy version: 1.0
+* Deploy version: 2.0
