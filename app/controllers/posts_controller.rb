@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   before_action :find_post, only: [:show, :edit, :update, :destroy]
+  before_action :set_locale
 
   def index
     @posts = Post.order('created_at DESC')
@@ -46,5 +47,9 @@ class PostsController < ApplicationController
 
   def find_post
     @post ||= Post.find(params[:id])
+  end
+
+  def set_locale
+    I18n.locale = :pl
   end
 end

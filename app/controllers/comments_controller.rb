@@ -1,5 +1,6 @@
 class CommentsController < ApplicationController
   before_action :find_post
+  before_action :set_locale
 
   def create
     @comment = @post.comments.create(secure_params)
@@ -23,5 +24,9 @@ class CommentsController < ApplicationController
 
   def secure_params
     params.require(:comment).permit(:name, :body)
+  end
+
+  def set_locale
+    I18n.locale = :pl
   end
 end
