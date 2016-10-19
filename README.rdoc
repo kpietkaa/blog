@@ -1,4 +1,4 @@
-== README [![Build Status](https://travis-ci.org/kpietkaa/blog.svg?branch=master)](https://travis-ci.org/kpietkaa/blog)
+== README {<img src="https://travis-ci.org/kpietkaa/blog.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/kpietkaa/blog]
 
 * Ruby: 2.3.0
 * Rails: 5.0.0.1
