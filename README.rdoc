@@ -1,6 +1,6 @@
-== README
+== README [![Build Status](https://travis-ci.org/kpietkaa/blog.svg?branch=master)](https://travis-ci.org/kpietkaa/blog)
 
 * Ruby: 2.3.0
 * Rails: 5.0.0.1
-* Heroku link: https://gruzja1.herokuapp.com/
+* Heroku link: https://gruzja1.herokuapp.com
 * Deploy version: 2.0
